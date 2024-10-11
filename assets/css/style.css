@@ -70,7 +70,7 @@ section{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 10px solid  ;
+    border: 10px solid #FCD588 ;
     position: relative;
     align-content: center;
 }
@@ -583,4 +583,282 @@ footer{
     .right-nav i{
         font-size: 21px;
     }
+}
+
+
+/* ABOUT US  */
+.about-us-image{
+    background-image: url('/assets/img/aboutus.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.all-main-image-data h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.about-us-headings{
+    text-align: center;
+}
+.about-us-headings h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 42px;
+    font-weight: 500;
+}
+.about-us-headings h2{
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(117, 181, 84);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.about-us-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-inline: 80px;
+    padding-block: 50px;
+}
+.about-text{
+    text-align: center;
+    font-size: 100%;
+}
+
+/* about-services  */
+
+.about-services{
+    display: flex;
+    gap: 70px;
+    margin-block: 70px;
+}
+.about-services-image{
+    width: 45%;
+}
+.about-services-image img{
+    width: 100%;
+}
+.about-services-content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.h-about-services-content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 42px;
+    font-weight: 500;
+}
+.about-services-text p{
+    font-size: 100%;
+}
+
+@media (max-width: 769px){
+    .about-services{
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .about-services-image{
+        width: 80%;
+    }
+    .about-services-content {
+        width: 80%;
+        text-align: center;
+    }
+    .about-us-content{
+        padding-inline: 20px;
+    }
+    .all-main-image-data h1{
+        font-size: 40px;
+    }
+}
+
+
+/* CONTACT US  */
+.contact-us-image{
+    background-image: url('/assets/img/contact-us.jpeg');
+}
+
+.contact-us-content{
+    display: flex;
+    margin-block: 80px;
+    justify-content: space-around;
+
+}
+.contact-reach{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 20px;
+}
+.contact-reach h1{
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.contact-form input{
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 0px;
+    border: 1px solid #75B554;
+    outline: none;
+    font-size: 15px;
+}
+.contact-form input:focus{
+    border: 1px dotted #75B554;
+    outline: none;
+}
+.contact-form textarea{
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 5px;
+    outline: none;
+    border: 1px solid #75B554;
+    font-size: 15px;
+
+}
+.faq{
+    width: 50%;
+}
+.faq h1{
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.accordion-item{
+    box-shadow: 0px 0px 8px 0px rgba(210.79999999999998, 210.79999999999998, 210.79999999999998, 0.5);
+    margin-bottom: 10px;
+    border-bottom: none !important;
+}
+.accordion-button{
+    font-size: 16px;
+    font-weight: 500;
+}
+.contact-form button{
+    width: 121px;
+    height: 47px;
+    border-radius: 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    background-color: #75B554;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.contact-form button:hover{
+    background-color: black;
+    color: var(--Green-Color);
+    transition: all 0.4s ease;
+}
+
+@media (max-width: 769px){
+    .contact-us-content{
+        flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    }
+    .contact-form{
+        width: 100%;
+        align-items: center;
+       
+    }
+    .contact-form input , .contact-form textarea{
+        width: 100%;
+    }
+    .contact-reach{
+        width: 80%;
+        text-align: center;
+    }
+    .faq{
+        width: 80%;
+    /* align-items: center; */
+    text-align: center;
+    }
+    .faq h1{
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Registration Page  */
+.registration-page{
+    background-image: url('/assets/img/register.jpg');
+}
+
+.regis-heading{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(58, 57, 57, 0.5);
+    align-content: center;
+}
+.membership-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 80px;
+}
+.membership-div h1{
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.total-plans{
+    display: flex;
+    gap: 30px;
+}
+.plan{
+    width: 285px;
+    height: 495px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 20px;
+}
+.plan p{
+    width: 90%;
+    text-align: center;
+    padding-block: 10px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.plan:nth-child(2) p{
+    background-color: #83cf1f;
+}
+.plan:nth-child(3) p{
+    background-color: #FCD588;
+}
+
+.plan h3{
+    width: 90%;
+    text-align: center;
+    padding-block: 14px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.plan h3:hover{
+    background-color: #78be1b;
+    cursor: pointer;
+    transition: all 0.4s ease;
 }
